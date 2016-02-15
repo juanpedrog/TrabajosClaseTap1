@@ -36,6 +36,20 @@ public class GridBagLayoutFill2{
     gbc.gridx=1;
     container.add(new JButton("this is a big Button5"),gbc);
 
+    gbc.gridx=2;
+    container.add(new JButton("Button6"),gbc);
+
+    gbc.gridx=0;
+    gbc.gridy=2;
+    container.add(new JButton("Button7"),gbc);
+
+    gbc.gridx=GridBagConstraints.RELATIVE;
+    gbc.fill=GridBagConstraints.HORIZONTAL;
+    container.add(new JButton("Button8"),gbc);
+
+    gbc.gridx=GridBagConstraints.RELATIVE;
+    container.add(new JButton("Button9"),gbc);
+
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setVisible(true);
     frame.pack();
